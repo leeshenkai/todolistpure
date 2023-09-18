@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <script src="app.js"></script>
     <link rel="stylesheet" href="styles.css">
 </head>
     <body>
@@ -13,18 +12,18 @@
             <h1>To-do list</h1>
             <div class="row">
                 <div class="col-md-5 mx-auto mt-5">
-                        <div class="input-group mt-5">
-                            <input type="text" class="form-control" placeholder="add a task!" aria-label="task" aria-describedby="basic-addon2">
-                            <div class="input-group-append">
-                            <button class="btn btn-primary" type="button">Button</button>
-                            </div>
+                    <div class="input-group mt-5">
+                        <input type="text" class="form-control" placeholder="add a task!" aria-label="task" aria-describedby="basic-addon2" id="taskInput">
+                        <div class="input-group-append">
+                            <button class="btn btn-primary" type="button" id="addTaskBtn">Add</button>
                         </div>
-                        <p>hi</p>
+                    </div>
+                    <ul id="taskList" class="list-group">
+                        <!-- Tasks will be added here dynamically -->
+                    </ul>                        
                 </div>
-                
             </div>
         </div>
-    
-        
+        <script src="app.js"></script>
     </body>
 </html>
